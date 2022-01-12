@@ -1,0 +1,16 @@
+﻿<Window x:Class="TextBoxValidado.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TextBoxValidado"
+        xmlns:misComponentes="clr-namespace:TextBoxValidado.MisComponentes"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="GridPrincipal">
+        <Label x:Name="LblCP" Content="Codigo Postal:" HorizontalAlignment="Left" Margin="66,128,0,0" VerticalAlignment="Top"/>
+        <misComponentes:ComponenteValidar x:Name="codigoPostal" tipoValidacion="cp"></misComponentes:ComponenteValidar>
+        <Label x:Name="LblCorreo" Content="Email:" HorizontalAlignment="Left" Margin="66,178,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.464,1.928"/>
+        <misComponentes:ComponenteValidar x:Name="correo" tipoValidacion="email" Margin="0,51,0,-51"></misComponentes:ComponenteValidar>
+    </Grid>
+</Window>
